@@ -1,5 +1,5 @@
-#include <studio.h>
-#include <studio.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 
 /**
@@ -27,5 +27,5 @@ int main(void)
 	{
 	      printf("%i is negative\n", n);
 	}
-return (0);
+        return (0);
 }
