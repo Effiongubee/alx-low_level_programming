@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - print if number is positive, zero, or negative
- * Description: using the main function this program prints programming is positive, zero, and negative
+ * Description: using the main function this program prints "programming is positive, zero, and negative"
  * Return: 0
  **/
 
