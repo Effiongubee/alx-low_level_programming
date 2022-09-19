@@ -20,6 +20,7 @@ void puts_half(char *str)
 	while (j <= max)
 	{
 		_putchar(str[j]);
+
 		j++;
 	}
 	_putchar('\n');
