@@ -7,18 +7,26 @@
  * Return: address of s
  */
 char *leet(char *s)
-{
-	int i, j;
-	char a[] = "aAeEoOtTlL";
-	char b[] = "4433007711";
 
-	for (i = 0; *(s + i); i++)
-	{
-		for (j = 0; j <= 9; j++)
-		{
-			if (a[j] == *(s + i))
-				*(s + i) = b[j];
-		}
-	}
-	return (s);
+	7
+	Char *leet(char *s)
+{
+		Int a = 0, b = 0, l= s;
+			Char r[5] = {‘A’, ‘E’, ‘O’, ‘T’, ‘L’};
+				Char n[5] = {‘4’, ‘3’, ‘0’, ‘7’, ‘1’};
+					While (s[a])
+							{
+										B = 0;
+												While (b < l)
+															{
+																			If (s[a] == r[b] || s[a] – 32 == r[b])
+																							{
+																												S[a] = n[b];
+																															}
+																						b++;
+																								}
+														a++;
+															}
+						Return (s);
 }
+
