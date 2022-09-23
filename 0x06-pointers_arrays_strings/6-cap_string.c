@@ -7,22 +7,26 @@
  * Return: address of s
  */
 char *cap_string(char *s)
-
-
 {
-	int a = 0, I;
-	int cspc = 13;
-	char spc[] = {32, ‘\t’, ‘\n’, 44, 46, '!', '?', '"', '(', ')', '{', '}'};
-	while (s[a])
+	int i = 0, j;
+	char a[] = " \t\n,;.!?\"(){}";
+
+	while (*(s + i))
 	{
-		i = 0;
-		while (I < cspc)
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
 		{
-			if ((a == 0 || s[a – 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
-				s[a] -= 32;
-			i++;
+			if (i == 0)
+				*(s + i) -= 'a' - 'A';
+			else
+			{
+				for (j = 0; j <= 12; j++)
+				{
+					if (a[j] == *(s + i - 1))
+						*(s + i) -= 'a' - 'A';
+				}
+			}
 		}
-		a++;
+		i++;
 	}
 	return (s);
 }
